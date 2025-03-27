@@ -1,26 +1,63 @@
-# Raylib C++ Starter Template
+# Wave Survivor Game (Raylib + C++)
 
-Raylib C++ Starter Template for Visual Studio Code on Windows.
+## Overview
+Wave Survivor is a 2D action game built using the Raylib library in C++. The game features a player character who must survive waves of attacking enemies by dodging, jumping, and attacking them while navigating through different platforms.
 
-This demo project contains a bouncing ball raylib example program.
+## Features
+- **Player Controls:** Move left/right, jump, and attack enemies.
+- **Enemy Waves:** Enemies appear in waves and attack the player.
+- **Health System:** The player starts with 10 hearts; health decreases upon enemy contact.
+- **Platforms:** The game includes various platforms for the player and enemies to move on.
+- **Attack Mechanic:** A melee attack with a cooldown timer.
+- **Animations:** Character and enemy animations, including attack and damage effects.
+- **Hit Effect:** A red flash when the player is hit.
+- **Background Music:** Different music tracks for various game states.
 
-It works with raylib version 4.5.
-Tested on both Windows 10 and Windows 11.
+## Controls
+- `LEFT ARROW` - Move left
+- `RIGHT ARROW` - Move right
+- `SPACE` - Jump
+- `X` - Attack
 
-# Video Tutorial
+## Dependencies
+To build and run the game, you need:
+- Raylib (latest version)
+- C++ compiler (G++/MinGW or MSVC)
+- Visual Studio Code (or any other C++ IDE)
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+## Installation
+1. Install Raylib by following the official [Raylib installation guide](https://www.raylib.com/).
+2. Clone this repository:
+   ```sh
+   git clone https://github.com/your-repo/wave-survivor
+   cd wave-survivor
+   ```
+3. Compile the game using g++:
+   ```sh
+   g++ -o game main.cpp -Iinclude -Llib -lraylib -lopengl32 -lgdi32 -lwinmm
+   ```
+   *(Modify paths if necessary depending on your setup.)*
+4. Run the executable:
+   ```sh
+   ./game
+   ```
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+## Assets
+- Player sprites
+- Enemy sprites
+- Background images
+- Music files (menu, level 1, level 2, game over)
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="https://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+## Future Improvements
+- Adding more enemy types with unique attack patterns.
+- Implementing power-ups for the player.
+- Enhancing AI behavior for more challenging waves.
+- Introducing different levels and progression.
+
+## License
+This game is open-source and released under the MIT License.
+
+## Author
+[Suchitra Shankar Srivastava] - Created for a Raylib-based C++ project.
+
 
